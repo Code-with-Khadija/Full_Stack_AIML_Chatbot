@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<!-- Initial greeting and mood check -->
+<category>
+    <pattern>HELLO</pattern>
+    <template>
+        <random>
+            <li>Hello! Remember, every day is a new beginning. How are you feeling today?</li>
+            <li>Hi there! I'm here to brighten your day. How's your mood right now?</li>
+            <li>Welcome! Today is full of possibilities. Would you like to share how you're feeling?</li>
+        </random>
+    </template>
+</category>
+
+<!-- Handling stressed feelings -->
+<category>
+    <pattern>I FEEL STRESSED</pattern>
+    <template>
+        <set name="mood">stressed</set>
+        <random>
+            <li>Take a deep breath. Remember what Mahatma Gandhi said: "The future depends on what you do today."</li>
+            <li>Stress is temporary. Like a rainbow after the rain, better moments are coming.</li>
+            <li>Let's try this together: Close your eyes, take 3 deep breaths, and imagine your stress floating away like clouds.</li>
+        </random>
+        Would you like to:
+        1. Hear a motivational quote
+        2. Learn about stress management
+        3. Try a quick relaxation exercise
+        4. Read about successful people who overcame stress
+    </template>
+</category>
+
+<!-- Motivational quotes category -->
+<category>
+    <pattern>TELL ME A QUOTE</pattern>
+    <template>
+        <random>
+            <li>"The only way to do great work is to love what you do." - Steve Jobs</li>
+            <li>"Everything is figureoutable." - Marie Forleo</li>
+            <li>"You are never too old to set another goal or to dream a new dream." - C.S. Lewis</li>
+            <li>"Your time is limited, don't waste it living someone else's life." - Steve Jobs</li>
+            <li>"Happiness is not something ready-made. It comes from your own actions." - Dalai Lama</li>
+            <li>"The only limit to our realization of tomorrow will be our doubts of today." - Franklin D. Roosevelt</li>
+        </random>
+        Would you like another uplifting quote?
+    </template>
+</category>
+
+<!-- Success stories -->
+<category>
+    <pattern>TELL ME ABOUT SUCCESSFUL PEOPLE</pattern>
+    <template>
+        <random>
+            <li>J.K. Rowling was a single mother on welfare before Harry Potter. She says: "Rock bottom became the solid foundation on which I rebuilt my life."</li>
+            <li>Jim Carrey suffered from depression and lived in a van before becoming successful. He believes in visualization and the power of positive thinking.</li>
+            <li>Lady Gaga openly discusses her PTSD and mental health journey while achieving global success.</li>
+            <li>Dwayne "The Rock" Johnson battled depression and now advocates for mental health awareness while being one of Hollywood's most successful actors.</li>
+        </random>
+        Would you like to hear another inspiring story?
+    </template>
+</category>
+
+<!-- Daily mental health reminders -->
+<category>
+    <pattern>DAILY REMINDER</pattern>
+    <template>
+        <random>
+            <li>🌟 Daily Wellness Checklist:
+                - Drink water regularly
+                - Take deep breaths
+                - Stretch your body
+                - Practice gratitude
+                - Connect with a loved one
+                Have you done any of these today?</li>
+            <li>🌺 Self-Care Reminder:
+                - Give yourself permission to rest
+                - Celebrate small wins
+                - Listen to your favorite music
+                - Take a peaceful walk
+                - Write down three good things</li>
+            <li>🌈 Today's Affirmations:
+                - I am worthy of happiness
+                - I choose peace over worry
+                - I am stronger than I think
+                - My potential is limitless
+                - I deserve good things</li>
+        </random>
+    </template>
+</category>
+
+<!-- Handling depression -->
+<category>
+    <pattern>I FEEL DEPRESSED</pattern>
+    <template>
+        <set name="mood">depressed</set>
+        I hear you, and I want you to know that your feelings are valid. Here's something that might help:
+        
+        🌱 Remember: Depression lies. You are:
+        - Stronger than you know
+        - Worthy of happiness
+        - Not alone in this journey
+        - Capable of getting through this
+        
+        Would you like to:
+        1. Read an uplifting story
+        2. Try a mood-lifting activity
+        3. Learn about positive habits
+        4. Hear what helped others
+    </template>
+</category>
+
+<!-- Mood-lifting activities -->
+<category>
+    <pattern>MOOD LIFTING ACTIVITIES</pattern>
+    <template>
+        Let's try these proven mood-boosters:
+        
+        1. The 5-4-3-2-1 Grounding Exercise:
+        - Name 5 things you can see
+        - 4 things you can touch
+        - 3 things you can hear
+        - 2 things you can smell
+        - 1 thing you can taste
+        
+        2. Joy List Creation:
+        Write down 3 tiny things that brought you joy before
+        
+        3. Movement Magic:
+        Even a 5-minute dance to your favorite song can help
+        
+        Which would you like to try first?
+    </template>
+</category>
+
+<!-- Positive habits -->
+<category>
+    <pattern>TEACH ME POSITIVE HABITS</pattern>
+    <template>
+        Here are life-changing positive habits:
+        
+        🌅 Morning Routine:
+        - Wake up at the same time
+        - Drink water first thing
+        - 5 minutes of stretching
+        - Say one positive affirmation
+        
+        🌙 Evening Routine:
+        - Reflect on 3 good things
+        - Light exercise or yoga
+        - Digital sunset (reduce screen time)
+        - Relaxing bedtime ritual
+        
+        Would you like to learn more about any of these habits?
+    </template>
+</category>
+
+<!-- Gratitude practice -->
+<category>
+    <pattern>LETS PRACTICE GRATITUDE</pattern>
+    <template>
+        Let's do a simple gratitude exercise:
+        
+        Complete these sentences:
+        1. Today I'm grateful for...
+        2. Something good that happened recently...
+        3. Someone I appreciate in my life...
+        
+        Remember: Gratitude can rewire our brain for happiness!
+    </template>
+</category>
+
+<!-- Emergency support -->
+<category>
+    <pattern>I NEED IMMEDIATE HELP</pattern>
+    <template>
+        You're not alone. Here are immediate resources:
+        
+        🆘 Emergency Contacts:
+        - Crisis Helpline: 988
+        - Emergency: 911
+        - Text HOME to 741741
+        
+        Remember: Reaching out is a sign of strength, not weakness.
+        Would you like to talk about what's troubling you?
+    </template>
+</category>
+
+<!-- Daily affirmations -->
+<category>
+    <pattern>GIVE ME AN AFFIRMATION</pattern>
+    <template>
+        <random>
+            <li>I am becoming stronger every day. My potential is limitless.</li>
+            <li>I choose to be confident and self-assured. I can handle anything that comes my way.</li>
+            <li>Today is full of possibilities. I attract positivity and good energy.</li>
+            <li>I am worthy of love, respect, and happiness.</li>
+            <li>My challenges are actually opportunities for growth and learning.</li>
+            <li>I trust in my ability to make the best of every situation.</li>
+        </random>
+        Would you like another affirmation?
+    </template>
+</category>
+
+<!-- Mindfulness exercises -->
+<category>
+    <pattern>TEACH ME MINDFULNESS</pattern>
+    <template>
+        Let's try this simple mindfulness exercise:
+        
+        🧘‍♀️ One-Minute Mindfulness:
+        1. Sit comfortably
+        2. Close your eyes
+        3. Focus on your breath
+        4. Notice any thoughts without judgment
+        5. Return focus to breathing
+        
+        Remember: Your mind is like a sky, thoughts are just passing clouds.
+        
+        Would you like to try another mindfulness exercise?
+    </template>
+</category>
+
+</aiml>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+  <!-- Asking for Support -->
+  <category>
+    <pattern>I NEED HELP</pattern>
+    <template>It’s okay to ask for help. I’m here to listen. What’s troubling you?</template>
+  </category>
+
+
+  <category>
+    <pattern>CAN YOU HELP ME</pattern>
+    <template>Of course! Tell me what’s going on, and we’ll work through it together.</template>
+  </category>
+
+  <category>
+    <pattern>I FEEL OVERWHELMED</pattern>
+    <template>Feeling overwhelmed can be tough. Can we break it down together?</template>
+  </category>
+  
+  <!-- Empathy Statements -->
+  <category>
+    <pattern>I FEEL SAD</pattern>
+    <template>I’m sorry you’re feeling this way. Sometimes sharing your thoughts can lighten the burden. Do you want to talk about what’s making you sad?</template>
+  </category>
+
+
+  <category>
+    <pattern>I AM ANXIOUS</pattern>
+    <template>Anxiety can be really challenging. Deep breaths can help. Would you like to try a calming exercise?</template>
+  </category>
+
+  <category>
+    <pattern>I AM STRESSED</pattern>
+    <template>Stress can feel heavy. Taking it one step at a time can help. Would you like some tips to manage it?</template>
+  </category>
+
+  <!-- Encouraging Messages -->
+
+  <category>
+    <pattern>WILL EVERYTHING BE OKAY</pattern>
+    <template>Things might seem tough now, but they can get better. You are stronger than you know.</template>
+  </category>
+  
+  <category>
+    <pattern>I FEEL LIKE GIVING UP</pattern>
+    <template>It’s okay to feel this way sometimes, but remember that you are valued and loved. Let’s talk about what’s weighing you down.</template>
+  </category>
+  
+  <!-- Coping Strategies -->
+  <category>
+    <pattern>HOW CAN I DEAL WITH THIS</pattern>
+    <template>Sometimes breaking things into smaller steps helps. What’s one small thing you can focus on right now?</template>
+  </category>
+  
+  <category>
+    <pattern>WHAT CAN I DO TO FEEL BETTER</pattern>
+    <template>Different things work for different people. Have you tried journaling, going for a walk, or talking to a friend?</template>
+  </category>
+
+  <category>
+    <pattern>I FEEL ALONE</pattern>
+    <template>I’m here with you, and I’ll listen. You’re not alone in this.</template>
+  </category>
+  
+  <!-- Motivational Quotes -->
+  <category>
+    <pattern>TELL ME SOMETHING MOTIVATIONAL</pattern>
+    <template>“You don’t have to see the whole staircase; just take the first step.” - Martin Luther King Jr.</template>
+  </category>
+  
+  <category>
+    <pattern>I NEED MOTIVATION</pattern>
+    <template>You’ve made it through tough times before, and you will again. Let’s take it one step at a time.</template>
+  </category>
+  
+  <!-- Gratitude and Farewells -->
+  <category>
+    <pattern>THANK YOU</pattern>
+    <template>You’re welcome! I’m glad I could help. Remember to be kind to yourself.</template>
+  </category>
+
+  <category>
+    <pattern>GOODBYE</pattern>
+    <template>Goodbye! Take care of yourself, and remember that I’m here whenever you need me.</template>
+  </category>
+  
+  <category>
+    <pattern>BYE</pattern>
+    <template>Bye! Wishing you peace and positivity. Come back anytime you need support.</template>
+  </category>
+  
+  <!-- Handling Uncertainty -->
+  <category>
+    <pattern>I DON’T KNOW WHAT TO DO</pattern>
+    <template>It’s okay to feel unsure. Sometimes just talking about it can bring clarity. Do you want to share more?</template>
+  </category>
+  
+  <category>
+    <pattern>I’M CONFUSED</pattern>
+    <template>Confusion can be tough to deal with. Let’s try to untangle what’s on your mind.</template>
+  </category>
+  
+  <!-- Encouraging User to Open Up -->
+  <category>
+    <pattern>CAN I SHARE SOMETHING</pattern>
+    <template>Of course! I’m here to listen to whatever you’d like to share.</template>
+  </category>
+
+  <category>
+    <pattern>I WANT TO TALK</pattern>
+    <template>I’m here for you. Please go ahead.</template>
+  </category>
+  
+  <!-- Affirmations -->
+  <category>
+    <pattern>I FEEL WORTHLESS</pattern>
+    <template>That’s a heavy feeling, but you are far from worthless. You have value and purpose, even if it’s hard to see right now.</template>
+  </category>
+  
+  <category>
+    <pattern>I CAN’T DO THIS ANYMORE</pattern>
+    <template>You don’t have to face this alone. Let’s figure out how to get through this together.</template>
+  </category>
+
+  <category>
+    <pattern>I FEEL LIKE A FAILURE</pattern>
+    <template>Everyone makes mistakes, but those don’t define who you are. You are worthy of kindness and understanding.</template>
+  </category>
+
+
+ <category>
+        <pattern>WHAT IS *</pattern>
+        <template>
+        <think><set name = "word"><star/></set></think>
+        <get name = "description"></get>
+      </template>
+    </category>
+
+
+</aiml>

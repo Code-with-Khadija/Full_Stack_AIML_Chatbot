@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <!-- General Mental Health Inquiry -->
+    <category>
+        <pattern>WHAT IS MENTAL HEALTH</pattern>
+        <template>
+            <random>
+                <li>Mental health refers to emotional, psychological, and social well-being. It affects how we think, feel, and behave in daily life.</li>
+                <li>Mental health encompasses our ability to handle stress, relate to others, and make decisions.</li>
+                <li>Good mental health is more than the absence of mental illness; it's about feeling good and functioning well.</li>
+            </random>
+            Would you like to know more about specific conditions?
+        </template>
+    </category>
+
+    <!-- Stress -->
+    <category>
+        <pattern>WHAT IS STRESS</pattern>
+        <template>
+            <random>
+                <li>Stress is the body's natural reaction to a challenge or demand, often called the "fight or flight" response.</li>
+                <li>It is a state of mental or emotional strain resulting from demanding circumstances.</li>
+                <li>While stress can motivate, prolonged stress can harm physical and mental health.</li>
+            </random>
+            Would you like tips on managing stress or understanding its causes?
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW CAN I MANAGE STRESS</pattern>
+        <template>
+            <random>
+                <li>Practice relaxation techniques like deep breathing, meditation, or yoga.</li>
+                <li>Break tasks into manageable steps and prioritize them.</li>
+                <li>Engage in physical activity or take regular breaks to recharge.</li>
+            </random>
+            Remember, reaching out for help is always a good idea. Would you like to talk more about this?
+        </template>
+    </category>
+
+    <!-- Anxiety -->
+    <category>
+        <pattern>WHAT IS ANXIETY</pattern>
+        <template>
+            <random>
+                <li>Anxiety is a feeling of fear, worry, or unease, often about uncertain outcomes.</li>
+                <li>It can be a natural reaction to stress but may become excessive or persistent, leading to anxiety disorders.</li>
+                <li>Common symptoms include restlessness, rapid heartbeat, and difficulty concentrating.</li>
+            </random>
+            Do you want to learn how to cope with anxiety or its treatments?
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW CAN I DEAL WITH ANXIETY</pattern>
+        <template>
+            <random>
+                <li>Identify triggers and try to limit exposure to them.</li>
+                <li>Use grounding techniques like focusing on your senses.</li>
+                <li>Consider therapy, such as Cognitive Behavioral Therapy (CBT), or consult a healthcare professional.</li>
+            </random>
+            You are not alone in this. Let me know how I can support you further.
+        </template>
+    </category>
+
+    <!-- Depression -->
+    <category>
+        <pattern>WHAT IS DEPRESSION</pattern>
+        <template>
+            <random>
+                <li>Depression is a mood disorder marked by persistent feelings of sadness or loss of interest.</li>
+                <li>It can affect sleep, appetite, energy levels, and concentration.</li>
+                <li>Depression is treatable through therapy, medication, and lifestyle changes.</li>
+            </random>
+            Would you like to know about its causes or treatments?
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW CAN I COPE WITH DEPRESSION</pattern>
+        <template>
+            <random>
+                <li>Engage in activities you enjoy, even if they feel hard at first.</li>
+                <li>Connect with supportive friends or family members.</li>
+                <li>Consider professional help, like counseling or therapy.</li>
+            </random>
+            Let me know how I can assist you further.
+        </template>
+    </category>
+
+    <!-- Redirect Unclear Questions -->
+    <category>
+        <pattern>WHAT IS *</pattern>
+        <template>
+            I’m not sure what you mean by "<star/>". Could you ask about a specific mental health condition or issue?
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW DO I *</pattern>
+        <template>
+            That’s a great question. Could you provide more details about what you’re trying to address or achieve?
+        </template>
+    </category>
+
+    <!-- Motivational Support -->
+    <category>
+        <pattern>WHY DO I FEEL THIS WAY</pattern>
+        <template>
+            <random>
+                <li>Emotions can be complex, often influenced by our thoughts, environment, or even physical health.</li>
+                <li>Sometimes, these feelings are a way of signaling that something in life needs attention or change.</li>
+                <li>It’s okay to feel this way. Let’s talk about what’s bothering you.</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT CAN I DO TO FEEL BETTER</pattern>
+        <template>
+            <random>
+                <li>Start small with self-care, like staying hydrated or taking a walk.</li>
+                <li>Practice mindfulness to focus on the present moment.</li>
+                <li>Reach out to someone you trust to share your feelings.</li>
+            </random>
+            Let’s explore more ways to help you feel better.
+        </template>
+    </category>
+
+    <!-- Catch-All -->
+    <category>
+        <pattern>*</pattern>
+        <template>
+            I’m here to support you. Could you ask about something specific, like "What is PTSD?" or "How can I manage stress?"
+        </template>
+    </category>
+
+    <!-- Additional General Questions -->
+    <category>
+        <pattern>WHAT ARE COMMON SIGNS OF MENTAL HEALTH ISSUES</pattern>
+        <template>Common signs of mental health issues include persistent sadness, anxiety, changes in sleep or appetite, withdrawal from social activities, and difficulty concentrating. If you notice these signs, it may be time to seek help.</template>
+    </category>
+
+    <category>
+        <pattern>WHERE CAN I FIND MORE INFORMATION ON MENTAL HEALTH TOPICS</pattern>
+        <template>You can explore reliable sources such as the World Health Organization, the National Institute of Mental Health, and various mental health research papers and studies available online.</template>
+    </category>
+    
+    <!-- Anxiety -->
+    <category>
+        <pattern>WHAT IS ANXIETY</pattern>
+        <template>Anxiety is a feeling of worry, nervousness, or unease, typically about an uncertain outcome. It is normal to feel anxious occasionally, but chronic anxiety can be a sign of an anxiety disorder.</template>
+    </category>
+
+    <!-- Depression -->
+    <category>
+        <pattern>WHAT IS DEPRESSION</pattern>
+        <template>Depression is a mood disorder characterized by persistent sadness, loss of interest in activities, and a lack of energy. It can affect a person's thoughts, behavior, and physical well-being.</template>
+    </category>
+
+    <!-- PTSD -->
+    <category>
+        <pattern>WHAT IS PTSD</pattern>
+        <template>PTSD stands for Post-Traumatic Stress Disorder. It is a mental health condition triggered by a terrifying event, either by experiencing it or witnessing it. Symptoms include flashbacks, nightmares, and severe anxiety.</template>
+    </category>
+
+    <!-- OCD -->
+    <category>
+        <pattern>WHAT IS OCD</pattern>
+        <template>OCD stands for Obsessive-Compulsive Disorder. It is a mental health condition characterized by unwanted and recurring thoughts (obsessions) and repetitive behaviors (compulsions) that a person feels driven to perform.</template>
+    </category>
+
+    <!-- ADHD -->
+    <category>
+        <pattern>WHAT IS ADHD</pattern>
+        <template>ADHD stands for Attention Deficit Hyperactivity Disorder. It is a neurodevelopmental disorder marked by inattention, hyperactivity, and impulsiveness. It can affect focus and behavior, especially in children.</template>
+    </category>
+
+    <!-- Bipolar Disorder -->
+    <category>
+        <pattern>WHAT IS BIPOLAR DISORDER</pattern>
+        <template>Bipolar disorder is a mental health condition that causes extreme mood swings, including emotional highs (mania or hypomania) and lows (depression). It can significantly impact a person's life if left untreated.</template>
+    </category>
+
+    <!-- Schizophrenia -->
+    <category>
+        <pattern>WHAT IS SCHIZOPHRENIA</pattern>
+        <template>Schizophrenia is a serious mental health disorder that affects how a person thinks, feels, and behaves. People with schizophrenia may experience hallucinations, delusions, and disordered thinking.</template>
+    </category>
+
+    <!-- CBT -->
+    <category>
+        <pattern>WHAT IS CBT</pattern>
+        <template>CBT stands for Cognitive Behavioral Therapy. It is a type of talk therapy that helps people identify and change negative thought patterns and behaviors. CBT is often used to treat anxiety and depression.</template>
+    </category>
+
+    <!-- Self-Care -->
+    <category>
+        <pattern>WHAT IS SELF CARE</pattern>
+        <template>Self-care involves activities and practices that individuals engage in regularly to reduce stress and maintain well-being. It can include physical exercise, meditation, hobbies, and taking breaks.</template>
+    </category>
+
+    <!-- Burnout -->
+    <category>
+        <pattern>WHAT IS BURNOUT</pattern>
+        <template>Burnout is a state of emotional, physical, and mental exhaustion caused by excessive and prolonged stress. It can result from feeling overwhelmed, emotionally drained, and unable to meet constant demands.</template>
+    </category>
+
+    <!-- Mindfulness -->
+    <category>
+        <pattern>WHAT IS MINDFULNESS</pattern>
+        <template>Mindfulness is the practice of being present and fully engaged in the current moment without judgment. It helps in reducing stress, improving focus, and enhancing overall mental well-being.</template>
+    </category>
+
+    <!-- Panic Attack -->
+    <category>
+        <pattern>WHAT IS A PANIC ATTACK</pattern>
+        <template>A panic attack is a sudden episode of intense fear or anxiety that triggers severe physical reactions when there is no real danger. Symptoms include rapid heartbeat, shortness of breath, and a feeling of losing control.</template>
+    </category>
+
+    <!-- Eating Disorders -->
+    <category>
+        <pattern>WHAT ARE EATING DISORDERS</pattern>
+        <template>Eating disorders are serious conditions related to persistent eating behaviors that negatively impact health. Common types include Anorexia Nervosa, Bulimia Nervosa, and Binge Eating Disorder.</template>
+    </category>
+
+    <!-- DSM-5 -->
+    <category>
+        <pattern>WHAT IS DSM 5</pattern>
+        <template>DSM-5 stands for the Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition. It is a handbook used by healthcare professionals as the authoritative guide to diagnosing mental health conditions.</template>
+    </category>
+
+    <!-- SAD -->
+    <category>
+        <pattern>WHAT IS SAD</pattern>
+        <template>SAD stands for Seasonal Affective Disorder. It is a type of depression that occurs at certain times of the year, usually in the winter when there is less natural sunlight.</template>
+    </category>
+
+    <!-- GAD -->
+    <category>
+        <pattern>WHAT IS GAD</pattern>
+        <template>GAD stands for Generalized Anxiety Disorder. It is characterized by persistent and excessive worry about various aspects of life, such as work, health, and social interactions.</template>
+    </category>
+
+    <!-- Exposure Therapy -->
+    <category>
+        <pattern>WHAT IS EXPOSURE THERAPY</pattern>
+        <template>Exposure therapy is a psychological treatment that helps people confront their fears. It involves gradual exposure to the feared object or situation until the fear response is reduced.</template>
+    </category>
+
+    <!-- EMDR -->
+    <category>
+        <pattern>WHAT IS EMDR</pattern>
+        <template>EMDR stands for Eye Movement Desensitization and Reprocessing. It is a therapy used to help people heal from trauma by using guided eye movements to process distressing memories.</template>
+    </category>
+
+    <!-- FAQ about Therapy -->
+    <category>
+        <pattern>WHAT IS THE ROLE OF A THERAPIST</pattern>
+        <template>A therapist is a licensed professional who provides mental health support. They help individuals understand their feelings, cope with challenges, and develop healthier thought patterns.</template>
+    </category>
+
+    <!-- Acronym Definitions -->
+    <category>
+        <pattern>WHAT DOES NIMH STAND FOR</pattern>
+        <template>NIMH stands for the National Institute of Mental Health. It is the lead federal agency for research on mental disorders.</template>
+    </category>
+
+    <category>
+        <pattern>WHAT DOES WHO STAND FOR</pattern>
+        <template>WHO stands for the World Health Organization. It is a specialized agency of the United Nations responsible for international public health.</template>
+    </category>
+    
+    <category>
+        <pattern>WHAT MEDICATION CAN HELP WITH ANXIETY</pattern>
+        <template>
+            Common medications for anxiety include SSRIs like Sertraline (Zoloft) and SNRIs like Venlafaxine (Effexor). 
+            These help in reducing symptoms of anxiety. Please consult a psychiatrist before starting any medication.
+        </template>
+    </category>
+
+    <category>
+        <pattern>RECOMMEND MEDICATION FOR DEPRESSION</pattern>
+        <template>
+            Medications such as Fluoxetine (Prozac) and Escitalopram (Lexapro) are commonly prescribed for depression.
+            These are SSRIs, which help by increasing serotonin levels in the brain. 
+            Remember to always take these medications under the guidance of a psychiatrist.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS THE FORMULA FOR PROZAC</pattern>
+        <template>The chemical formula for Fluoxetine (Prozac) is C<sub>17</sub>H<sub>18</sub>F<sub>3</sub>NO.</template>
+    </category>
+
+    <category>
+        <pattern>WHAT MEDICATION IS USED FOR BIPOLAR DISORDER</pattern>
+        <template>
+            Common medications include Lithium Carbonate (Li<sub>2</sub>CO<sub>3</sub>), which is a mood stabilizer, 
+            and antipsychotics like Olanzapine (Zyprexa). Consult your psychiatrist to find the most suitable option.
+        </template>
+    </category>
+
+    <!-- Using <set> and <get> tags -->
+    <category>
+        <pattern>MY DISORDER IS * </pattern>
+        <template>
+            <set name="disorder"><star/></set>
+            Thank you for sharing. You mentioned <get name="disorder"/>. Would you like information on treatment options for <get name="disorder"/>?
+        </template>
+    </category>
+
+    <category>
+        <pattern>YES</pattern>
+        <template>
+            <think><set name="userAgreed">true</set></think>
+            Please note that medication is just one part of a comprehensive treatment plan. I can suggest some options if you would like.
+        </template>
+    </category>
+
+    <category>
+        <pattern>NO</pattern>
+        <template>
+            <think><set name="userAgreed">false</set></think>
+            No problem. Remember, consulting a psychiatrist can help you find the best treatment for <get name="disorder"/>.
+        </template>
+    </category>
+
+    <!-- Role of Psychiatrist -->
+    <category>
+        <pattern>WHAT DOES A PSYCHIATRIST DO</pattern>
+        <template>
+            A psychiatrist is a medical doctor who specializes in diagnosing and treating mental health disorders.
+        </template>
+    </category>
+
+    <category>
+        <pattern>DO I NEED TO SEE A PSYCHIATRIST</pattern>
+        <template>
+            If you are experiencing persistent symptoms of anxiety, depression, or any other mental health issues, 
+            consulting a psychiatrist can be very helpful. They can guide you in finding the right treatment options, including medication.
+        </template>
+    </category>
+
+    <!-- Anti-Anxiety Medications -->
+    <category>
+        <pattern>WHAT IS LORAZEPAM USED FOR</pattern>
+        <template>Lorazepam (Ativan) is used to treat anxiety disorders. It belongs to a class of medications called benzodiazepines, which have a calming effect. Please use it only under medical supervision.</template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS THE FORMULA FOR LORAZEPAM</pattern>
+        <template>The chemical formula for Lorazepam is C<sub>15</sub>H<sub>10</sub>Cl<sub>2</sub>N<sub>2</sub>O<sub>2</sub>.</template>
+    </category>
+
+    <!-- Antipsychotic Medications -->
+    <category>
+        <pattern>WHAT MEDICATIONS ARE USED FOR SCHIZOPHRENIA</pattern>
+        <template>
+            Common antipsychotic medications for schizophrenia include Risperidone (Risperdal) and Aripiprazole (Abilify). 
+            These medications help manage symptoms like hallucinations and delusions. It is important to follow a psychiatrist's advice when using these.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS THE FORMULA FOR RISPERIDONE</pattern>
+        <template>The chemical formula for Risperidone is C<sub>23</sub>H<sub>27</sub>FN<sub>4</sub>O<sub>2</sub>.</template>
+    </category>
+
+    <!-- Mood Stabilizers -->
+    <category>
+        <pattern>WHAT MEDICATIONS ARE USED AS MOOD STABILIZERS</pattern>
+        <template>
+            Common mood stabilizers include Lithium (Li<sub>2</sub>CO<sub>3</sub>) and Valproate (Depakote). 
+            These medications help regulate mood swings, especially in bipolar disorder.
+        </template>
+    </category>
+
+    <!-- Reminders for Users -->
+    <category>
+        <pattern>WHAT SHOULD I REMEMBER WHEN TAKING MEDICATION</pattern>
+        <template>
+            Always take your medication as prescribed by your psychiatrist. Do not stop or adjust the dosage without consulting them, 
+            and be aware of potential side effects. Regular follow-ups are important to ensure the medication is working effectively.
+        </template>
+    </category>
+
+</aiml>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<!-- Basic greeting patterns -->
+<category>
+    <pattern>HELLO</pattern>
+    <template>
+        <random>
+            <li>Hello! I'm here to listen and help. How are you feeling today?</li>
+            <li>Hi there! Thank you for reaching out. Would you like to talk about what's on your mind?</li>
+            <li>Welcome! I'm your therapeutic assistant. How can I support you today?</li>
+        </random>
+    </template>
+</category>
+
+<category>
+    <pattern>I FEEL *</pattern>
+    <template>
+        <think><set name="feeling"><star/></set></think>
+        <condition name="feeling">
+            <li value="sad">I understand you're feeling sad. Would you like to talk about what's causing these feelings?</li>
+            <li value="anxious">Anxiety can be overwhelming. Can you tell me more about what's making you feel anxious?</li>
+            <li value="depressed">I hear that you're feeling depressed. Have you been experiencing this for a while?</li>
+            <li>Thank you for sharing how you feel. Can you tell me more about why you feel <star/>?</li>
+        </condition>
+    </template>
+</category>
+
+<!-- Depression related patterns -->
+<category>
+    <pattern>I AM DEPRESSED</pattern>
+    <template>
+        <srai>DEPRESSION INFO</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>DEPRESSION INFO</pattern>
+    <template>
+        I understand you're dealing with depression. This is a common but serious condition. Would you like to:
+        1. Talk about your feelings
+        2. Learn about depression symptoms
+        3. Discuss coping strategies
+        4. Get information about professional help
+        Please choose a number or tell me what you'd prefer to discuss.
+    </template>
+</category>
+
+<category>
+    <pattern>DEPRESSION SYMPTOMS</pattern>
+    <template>
+        Common symptoms of depression include:
+        - Persistent sad or empty feelings
+        - Loss of interest in activities
+        - Sleep changes
+        - Appetite changes
+        - Difficulty concentrating
+        Would you like to discuss any of these symptoms in particular?
+    </template>
+</category>
+
+<!-- Anxiety related patterns -->
+<category>
+    <pattern>I HAVE ANXIETY</pattern>
+    <template>
+        <srai>ANXIETY INFO</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>ANXIETY INFO</pattern>
+    <template>
+        Anxiety can be very challenging to deal with. Let's talk about it:
+        1. Discuss your current anxiety
+        2. Learn about anxiety symptoms
+        3. Explore coping techniques
+        4. Find professional support
+        What would be most helpful for you right now?
+    </template>
+</category>
+
+<!-- Coping strategies -->
+<category>
+    <pattern>HOW CAN I COPE WITH *</pattern>
+    <template>
+        <think><set name="problem"><star/></set></think>
+        Here are some coping strategies that might help with <get name="problem"/>:
+        1. Deep breathing exercises
+        2. Mindfulness meditation
+        3. Regular exercise
+        4. Maintaining a routine
+        Would you like to learn more about any of these techniques?
+    </template>
+</category>
+
+<!-- Follow-up questions -->
+<category>
+    <pattern>TELL ME MORE ABOUT *</pattern>
+    <template>
+        <think><set name="topic"><star/></set></think>
+        I'll be happy to provide more information about <get name="topic"/>. What specific aspects would you like to know about?
+    </template>
+</category>
+
+<!-- Crisis response -->
+<category>
+    <pattern>I WANT TO * MYSELF</pattern>
+    <template>
+        I'm very concerned about your safety right now. Please know that you're not alone. 
+        It's important to get immediate help. Please:
+        1. Call emergency services (911 in the US)
+        2. Contact the Suicide Prevention Lifeline: 1-800-273-8255
+        3. Reach out to someone you trust
+        Would you like information about crisis resources in your area?
+    </template>
+</category>
+
+<!-- Emotional support -->
+<category>
+    <pattern>NOBODY UNDERSTANDS ME</pattern>
+    <template>
+        <random>
+            <li>It can feel very isolating when you feel misunderstood. I'm here to listen without judgment. Would you like to tell me more about what's making you feel this way?</li>
+            <li>That must be a very lonely feeling. Can you share what makes you feel misunderstood?</li>
+            <li>I'm here to understand and support you. What would help you feel more understood?</li>
+        </random>
+    </template>
+</category>
+
+<!-- Self-care recommendations -->
+<category>
+    <pattern>HOW CAN I FEEL BETTER</pattern>
+    <template>
+        Here are some self-care practices that might help:
+        1. Establish a regular sleep schedule
+        2. Engage in physical activity
+        3. Practice mindfulness or meditation
+        4. Connect with supportive people
+        5. Maintain a balanced diet
+        Would you like to explore any of these options in more detail?
+    </template>
+</category>
+
+<!-- Professional help guidance -->
+<category>
+    <pattern>I NEED PROFESSIONAL HELP</pattern>
+    <template>
+        It's brave of you to recognize when you need professional support. Here are some steps you can take:
+        1. Consult your primary care physician
+        2. Find a therapist through your insurance provider
+        3. Contact local mental health clinics
+        4. Use online therapy platforms
+        Would you like more specific information about any of these options?
+    </template>
+</category>
+
+<!-- Default response -->
+<category>
+    <pattern>*</pattern>
+    <template>
+        <random>
+            <li>I hear you. Can you tell me more about that?</li>
+            <li>Thank you for sharing. How does that make you feel?</li>
+            <li>I'm listening. Would you like to explore this further?</li>
+        </random>
+    </template>
+</category>
+
+</aiml>

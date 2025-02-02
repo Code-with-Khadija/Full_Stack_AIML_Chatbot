@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+    
+<category><pattern>GOODBYE</pattern>
+<template><random>
+    <li>Goodbye, take care.</li>
+    <li>Wishing you all the best.</li>
+    <li>See you later.</li>
+    <li>Take care of yourself.</li>
+    <li>Wishing you peace.</li>
+    </random></template>
+</category>
+
+<category><pattern>BYE</pattern>
+<template><random><li>Take care.</li>
+<li>Wishing you all the best.</li><li>Goodbye.</li><li>Until next time.</li><li>Catch you later!</li><li>Take care of yourself.</li><li>See you soon.</li></random></template>
+</category>
+
+<category><pattern>BYE BYE *</pattern>
+<template><srai>bye</srai></template>
+</category>
+
+<category><pattern>GOOD NIGHT</pattern>
+<template>Goodnight, <get name="name"/>. Rest well!</template>
+</category>
+
+<category><pattern>GOODNIGHT *</pattern>
+<template><srai>goodnight</srai></template>
+</category>
+
+<category><pattern>HAVE A GOOD NIGHT</pattern>
+<template>Sleep well! See you soon.</template>
+</category>
+
+<category><pattern>HI THERE *</pattern>
+<template><srai>hello</srai></template>
+</category>
+
+<category><pattern>HELLO AGAIN</pattern>
+<template>Hi there, <get name="name"/>! How are you?</template>
+</category>
+
+<category><pattern>HELLO HOW ARE YOU</pattern>
+<template>I am doing well, thank you. How about you?</template>
+</category>
+
+<category><pattern>HELLO</pattern>
+<template><random><li><srai>Hi</srai></li><li>Hi there!</li><li>Hey there!</li><li>Hello, how’s it going?</li></random></template>
+</category>
+
+
+<category><pattern>HI</pattern>
+<template><random><li>Hey there!</li><li>Hi, how are you doing today?</li><li>Hello! How is your day going?</li></random></template>
+</category>
+
+<category><pattern>GOOD MORNING</pattern>
+<template>Good morning, <get name="name"/>! How are you feeling today?</template>
+</category>
+
+<category><pattern>GOOD BY</pattern>
+<template><srai>bye</srai></template>
+</category>
+
+<category><pattern>GOOD DAY</pattern>
+<template><srai>hello</srai></template>
+</category>
+
+<category><pattern>ANYBODY HOME</pattern>
+<template><srai>hello</srai></template>
+</category>
+
+<category><pattern>HELLO HOW ARE YOU</pattern>
+<template>I am doing great, thank you! How about you?</template>
+</category>
+
+<category><pattern>SEE YOU SOON</pattern>
+<template><srai>bye</srai></template>
+</category>
+
+<category><pattern>SEE YOU *</pattern>
+<template><srai>bye</srai></template>
+</category>
+
+<category><pattern>FAREWELL *</pattern>
+<template><srai>bye</srai></template>
+</category>
+
+<category><pattern>TAKE CARE</pattern>
+<template>Take care of yourself!</template>
+</category>
+
+<category><pattern>GOODBYE</pattern>
+<template><srai>bye</srai></template>
+</category>
+
+<category><pattern>HELLO THERE</pattern>
+<template><srai>hello</srai></template>
+</category>
+
+<category><pattern>HOW IS EVERYONE *</pattern>
+<template>We are all doing well, thank you for asking!</template>
+</category>
+
+<category><pattern>HELLO AGAIN</pattern>
+<template>Hi again, nice to see you!</template>
+</category>
+
+<category><pattern>HEY THERE</pattern>
+<template><srai>hello</srai></template>
+</category>
+
+<category><pattern>HELLO HOW’S IT GOING</pattern>
+<template>I am doing well, thank you. How are you?</template>
+</category>
+
+
+<category><pattern>HELLO!</pattern>
+<template><random><li><srai>Hi!</srai></li><li>Hey there!</li><li>Greetings!</li></random></template>
+</category>
+
+<category><pattern>HOWDY *</pattern>
+<template><srai>hello</srai></template>
+</category>
+
+
+<category><pattern>GOT TO GO</pattern>
+<template><srai>bye</srai></template>
+</category>
+
+<category><pattern>GOODNITE *</pattern>
+<template><srai>goodnight</srai></template>
+</category>
+
+
+<category><pattern>TIME TO GO</pattern>
+<template><srai>bye</srai></template>
+</category>
+
+<category><pattern>YOUR WELCOME *</pattern>
+<template><srai>you are welcome</srai></template>
+</category>
+
+<category><pattern>SAYONARA</pattern>
+<template><srai>good bye</srai></template>
+</category>
+
+<category><pattern>NIGHTY *</pattern>
+<template><srai>goodnight</srai></template>
+</category>
+
+<category><pattern>REPLY</pattern>
+<template><srai>hello</srai></template>
+</category>
+
+
+<category>
+    <pattern>WHO ARE YOU</pattern>
+    <template>I am a mental health bot, here to provide support and information. How can I assist you today?</template>
+</category>
+
+<category>
+    <pattern>WHO MADE YOU</pattern>
+    <template>I was created by Khadija Ijaz, a developer passionate about AI and mental health. How can I assist you further?</template>
+</category>
+
+<category>
+    <pattern>WHAT IS YOUR PURPOSE</pattern>
+    <template>My purpose is to provide support and resources related to mental health. I can help with advice, resources, and general well-being tips. Feel free to ask me anything!</template>
+</category>
+
+<category>
+    <pattern>WHAT CAN YOU DO</pattern>
+    <template>I can provide mental health tips, resources, and guidance, and I'm here to listen if you need someone to talk to. How can I help you today?</template>
+</category>
+
+<category>
+    <pattern>HOW CAN YOU HELP ME</pattern>
+    <template>I can offer mental health advice, provide coping strategies for stress, anxiety, and depression, and recommend resources that could be helpful. Feel free to share how you are feeling.</template>
+</category>
+
+<category>
+    <pattern>ARE YOU A HUMAN</pattern>
+    <template>No, I am an AI chatbot created to support mental health. While I may not be human, I am here to listen and provide help.</template>
+</category>
+
+<category>
+    <pattern>CAN I TALK TO YOU</pattern>
+    <template>Of course! I am here for you. Feel free to share what is on your mind, and I will do my best to help.</template>
+</category>
+
+
+    
+
+    <!-- Emotional Support -->
+    <category>
+        <pattern>I FEEL SAD</pattern>
+        <template>I am sorry you are feeling this way. It is okay to have tough days. Would you like some tips to help you feel better?</template>
+    </category>
+
+    <category>
+        <pattern>I FEEL ANXIOUS</pattern>
+        <template>Take a deep breath. I am here with you. Would you like to try a simple breathing exercise?</template>
+    </category>
+
+    <category>
+        <pattern>I FEEL STRESSED</pattern>
+        <template>Stress can be overwhelming. Let us try some relaxation techniques together. Would you like some guidance?</template>
+    </category>
+
+    <!-- Breathing Exercise -->
+    <category>
+        <pattern>YES</pattern>
+        <template>Great! Close your eyes and inhale deeply for 4 seconds, hold for 4 seconds, and exhale slowly for 4 seconds. Try this a few times and let me know how you feel.</template>
+    </category>
+
+    <category>
+        <pattern>NO</pattern>
+        <template>That is okay. Remember, you are not alone, and it is normal to feel this way sometimes. Would you like some positive affirmations instead?</template>
+    </category>
+
+    <!-- Affirmations -->
+    <category>
+        <pattern>GIVE ME AFFIRMATIONS</pattern>
+        <template>You are stronger than you think. You are capable of handling anything life throws at you. This feeling is temporary, and you will get through it.</template>
+    </category>
+
+    <category>
+        <pattern>I NEED MOTIVATION</pattern>
+        <template>Believe in yourself and your abilities. You are capable of amazing things. Keep going, even when it is tough. You have got this.</template>
+    </category>
+
+    <!-- Self-Care Tips -->
+    <category>
+        <pattern>GIVE ME SELF CARE TIPS</pattern>
+        <template>Here are some self-care tips: 1) Take time to do something you enjoy. 2) Practice mindfulness. 3) Write down three things you are grateful for. 4) Stay hydrated and get enough sleep.</template>
+    </category>
+
+    <!-- Coping with Anxiety -->
+    <category>
+        <pattern>HOW TO COPE WITH ANXIETY</pattern>
+        <template>Try grounding techniques like the 5-4-3-2-1 method: Name 5 things you can see, 4 you can touch, 3 you can hear, 2 you can smell, and 1 you can taste.</template>
+    </category>
+
+    <!-- Seeking Professional Help -->
+    <category>
+        <pattern>I NEED PROFESSIONAL HELP</pattern>
+        <template>If you are feeling overwhelmed, please reach out to a mental health professional or contact a trusted friend or family member.</template>
+    </category>
+
+    <!-- Depression Support -->
+    <category>
+        <pattern>I HAVE DEPRESSION</pattern>
+        <template>I am really sorry you are feeling this way. Depression is tough, but you do not have to go through it alone. Please consider talking to a professional for support.</template>
+    </category>
+
+    <!-- Sleep Issues -->
+    <category>
+        <pattern>I CANNOT SLEEP</pattern>
+        <template>It is hard when you cannot sleep. Try avoiding screens before bed, practice deep breathing, or listen to calming music. If it persists, reach out for help.</template>
+    </category>
+
+    <!-- Negative Thoughts -->
+    <category>
+        <pattern>I FEEL WORTHLESS</pattern>
+        <template>Your feelings are valid, but please remember that you are important and you matter. The world is better with you in it.</template>
+    </category>
+
+    <category>
+        <pattern>I FEEL HOPELESS</pattern>
+        <template>It is okay to feel this way sometimes, but it will not last forever. Take it one day at a time. You are not alone.</template>
+    </category>
+
+    <!-- Crisis Support -->
+    <category>
+        <pattern>I WANT TO HURT MYSELF</pattern>
+        <template>I am really sorry you are feeling this way. Please reach out to someone you trust or contact a crisis helpline immediately. You do not have to go through this alone.</template>
+    </category>
+
+    <category>
+        <pattern>I AM IN CRISIS</pattern>
+        <template>If you are in crisis, please contact emergency services or a trusted person right away. You deserve to get the help you need.</template>
+    </category>
+
+    <!-- Gratitude Practice -->
+    <category>
+        <pattern>HOW CAN I PRACTICE GRATITUDE</pattern>
+        <template>Practicing gratitude can help shift your mindset. Try writing down three things you are grateful for each day, no matter how small they are.</template>
+    </category>
+
+    <category>
+        <pattern>WHAT ARE COMMON MENTAL HEALTH PROBLEMS AMONG YOUNG PEOPLE</pattern>
+        <template>Common mental health problems among young people include anxiety, depression, stress, and eating disorders. Social factors, educational pressures, and personal challenges often influence these issues.</template>
+    </category>
+
+    <category>
+        <pattern>WHAT ARE HELP SEEKING BEHAVIORS IN MENTAL HEALTH</pattern>
+        <template>Help-seeking behaviors refer to actions individuals take when seeking support for mental health issues. Factors like stigma, awareness, and access to services can influence whether young people seek help.</template>
+    </category>
+
+    <category>
+        <pattern>WHAT ARE BARRIERS TO MENTAL HEALTH SUPPORT</pattern>
+        <template>Barriers to mental health support include stigma, lack of awareness, limited access to professional services, and fear of judgment. Addressing these barriers is crucial for better mental health outcomes.</template>
+    </category>
+
+    <!-- Mental Health Research in India -->
+    <category>
+        <pattern>TELL ME ABOUT MENTAL HEALTH RESEARCH IN INDIA</pattern>
+        <template>The Indian Council of Medical Research has conducted extensive studies on mental health, focusing on areas like community mental health care, child and adolescent mental health, and substance dependence. These studies provide valuable data on psychiatric disorders and interventions in India.</template>
+    </category>
+
+    <category>
+        <pattern>WHAT ARE COMMON PSYCHIATRIC DISORDERS IN INDIA</pattern>
+        <template>Common psychiatric disorders in India include depression, anxiety disorders, bipolar disorder, schizophrenia, and substance abuse. Research indicates a need for more community-based mental health care programs.</template>
+    </category>
+
+    <!-- Mental Health Education and Stigma -->
+    <category>
+        <pattern>HOW CAN WE REDUCE MENTAL HEALTH STIGMA AMONG COLLEGE STUDENTS</pattern>
+        <template>Reducing mental health stigma among college students can be achieved through awareness campaigns, psychoeducational tools, and promoting open conversations about mental health. Education is key to breaking down barriers and misconceptions.</template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS THE IMPACT OF MENTAL HEALTH AWARENESS CAMPAIGNS</pattern>
+        <template>Mental health awareness campaigns can significantly improve knowledge and reduce stigma. They encourage individuals to seek help and create a more supportive environment for discussing mental health issues.</template>
+    </category>
+
+    <!-- Study on Mental Disorders -->
+    <category>
+        <pattern>WHAT ARE COMMON MENTAL DISORDERS FOUND IN RETROSPECTIVE STUDIES</pattern>
+        <template>Common mental disorders identified in retrospective studies include depression, anxiety disorders, psychotic disorders, and personality disorders. These studies often analyze patient demographics and patterns over time.</template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS A RETROSPECTIVE STUDY IN MENTAL HEALTH</pattern>
+        <template>A retrospective study in mental health involves analyzing past patient records to identify trends, patterns, and common disorders. It helps in understanding the prevalence and demographics of mental health issues.</template>
+    </category>
+
+    <!-- Specific Research Topics -->
+    <category>
+        <pattern>WHAT ARE SOME RESEARCH TOPICS IN MENTAL HEALTH</pattern>
+        <template>Some interesting research topics in mental health include the impact of social media on teen mental health, coping strategies for college stress, the role of exercise in mental well-being, and mental health stigma in rural areas.</template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS THE IMPACT OF SOCIAL MEDIA ON TEEN MENTAL HEALTH</pattern>
+        <template>Social media can have both positive and negative impacts on teen mental health. While it can provide a sense of community, it can also contribute to anxiety, depression, and body image issues due to comparison and cyberbullying.</template>
+    </category>
+
+    <category>
+        <pattern>HOW DOES EXERCISE AFFECT MENTAL WELL BEING</pattern>
+        <template>Exercise has a positive effect on mental well-being. It helps reduce symptoms of anxiety and depression, improves mood, and boosts overall cognitive function. Physical activity releases endorphins, which are natural mood lifters.</template>
+    </category>
+
+    <category>
+        <pattern>WHAT ARE MINDFULNESS PRACTICES FOR PTSD</pattern>
+        <template>Mindfulness practices for PTSD include deep breathing, meditation, and grounding techniques. These practices help individuals focus on the present moment and reduce the intensity of traumatic memories.</template>
+    </category>
+
+    <!-- Diet and Mental Health -->
+    <category>
+        <pattern>HOW DOES DIET AFFECT MENTAL HEALTH</pattern>
+        <template>Diet plays a significant role in mental health. A balanced diet rich in nutrients can help improve mood, reduce anxiety, and support brain function. Foods like omega-3 fatty acids, fruits, and vegetables are known to have positive effects on mental health.</template>
+    </category>
+
+    <category>
+        <pattern>CAN NUTRITION HELP WITH DEPRESSION</pattern>
+        <template>Yes, nutrition can help with depression. Certain foods, such as those rich in omega-3 fatty acids, B vitamins, and antioxidants, can help improve mood and cognitive function. A healthy diet supports overall brain health.</template>
+    </category>
+
+    <!-- Suicide Prevention -->
+    <category>
+        <pattern>WHAT ARE STRATEGIES FOR SUICIDE PREVENTION IN TEENS</pattern>
+        <template>Strategies for suicide prevention in teens include open communication, mental health education, early intervention, and providing access to support services. It is important to create a safe environment where teens feel comfortable discussing their feelings.</template>
+    </category>
+
+    <category>
+        <pattern>HOW CAN WE SUPPORT SOMEONE AT RISK OF SUICIDE</pattern>
+        <template>If you know someone at risk of suicide, offer them a non-judgmental space to talk, encourage them to seek professional help, and stay connected. Let them know they are not alone and that their feelings are valid.</template>
+    </category>
+
+    <!-- Additional General Questions -->
+    <category>
+        <pattern>WHAT ARE COMMON SIGNS OF MENTAL HEALTH ISSUES</pattern>
+        <template>Common signs of mental health issues include persistent sadness, anxiety, changes in sleep or appetite, withdrawal from social activities, and difficulty concentrating. If you notice these signs, it may be time to seek help.</template>
+    </category>
+
+    <category>
+        <pattern>WHERE CAN I FIND MORE INFORMATION ON MENTAL HEALTH TOPICS</pattern>
+        <template>You can explore reliable sources such as the World Health Organization, the National Institute of Mental Health, and various mental health research papers and studies available online.</template>
+    </category>
+    
+        <!-- Anxiety -->
+    <category>
+        <pattern>WHAT IS ANXIETY</pattern>
+        <template>Anxiety is a feeling of worry, nervousness, or unease, typically about an uncertain outcome. It is normal to feel anxious occasionally, but chronic anxiety can be a sign of an anxiety disorder.</template>
+    </category>
+
+    <!-- Depression -->
+    <category>
+        <pattern>WHAT IS DEPRESSION</pattern>
+        <template>Depression is a mood disorder characterized by persistent sadness, loss of interest in activities, and a lack of energy. It can affect a person's thoughts, behavior, and physical well-being.</template>
+    </category>
+
+    <!-- PTSD -->
+    <category>
+        <pattern>WHAT IS PTSD</pattern>
+        <template>PTSD stands for Post-Traumatic Stress Disorder. It is a mental health condition triggered by a terrifying event, either by experiencing it or witnessing it. Symptoms include flashbacks, nightmares, and severe anxiety.</template>
+    </category>
+
+    <!-- OCD -->
+    <category>
+        <pattern>WHAT IS OCD</pattern>
+        <template>OCD stands for Obsessive-Compulsive Disorder. It is a mental health condition characterized by unwanted and recurring thoughts (obsessions) and repetitive behaviors (compulsions) that a person feels driven to perform.</template>
+    </category>
+
+    <!-- ADHD -->
+    <category>
+        <pattern>WHAT IS ADHD</pattern>
+        <template>ADHD stands for Attention Deficit Hyperactivity Disorder. It is a neurodevelopmental disorder marked by inattention, hyperactivity, and impulsiveness. It can affect focus and behavior, especially in children.</template>
+    </category>
+
+    <!-- Bipolar Disorder -->
+    <category>
+        <pattern>WHAT IS BIPOLAR DISORDER</pattern>
+        <template>Bipolar disorder is a mental health condition that causes extreme mood swings, including emotional highs (mania or hypomania) and lows (depression). It can significantly impact a person's life if left untreated.</template>
+    </category>
+
+    <!-- Schizophrenia -->
+    <category>
+        <pattern>WHAT IS SCHIZOPHRENIA</pattern>
+        <template>Schizophrenia is a serious mental health disorder that affects how a person thinks, feels, and behaves. People with schizophrenia may experience hallucinations, delusions, and disordered thinking.</template>
+    </category>
+
+    <!-- CBT -->
+    <category>
+        <pattern>WHAT IS CBT</pattern>
+        <template>CBT stands for Cognitive Behavioral Therapy. It is a type of talk therapy that helps people identify and change negative thought patterns and behaviors. CBT is often used to treat anxiety and depression.</template>
+    </category>
+
+    <!-- Self-Care -->
+    <category>
+        <pattern>WHAT IS SELF CARE</pattern>
+        <template>Self-care involves activities and practices that individuals engage in regularly to reduce stress and maintain well-being. It can include physical exercise, meditation, hobbies, and taking breaks.</template>
+    </category>
+
+    <!-- Burnout -->
+    <category>
+        <pattern>WHAT IS BURNOUT</pattern>
+        <template>Burnout is a state of emotional, physical, and mental exhaustion caused by excessive and prolonged stress. It can result from feeling overwhelmed, emotionally drained, and unable to meet constant demands.</template>
+    </category>
+
+    <!-- Mindfulness -->
+    <category>
+        <pattern>WHAT IS MINDFULNESS</pattern>
+        <template>Mindfulness is the practice of being present and fully engaged in the current moment without judgment. It helps in reducing stress, improving focus, and enhancing overall mental well-being.</template>
+    </category>
+
+    <!-- Panic Attack -->
+    <category>
+        <pattern>WHAT IS A PANIC ATTACK</pattern>
+        <template>A panic attack is a sudden episode of intense fear or anxiety that triggers severe physical reactions when there is no real danger. Symptoms include rapid heartbeat, shortness of breath, and a feeling of losing control.</template>
+    </category>
+
+    <!-- Eating Disorders -->
+    <category>
+        <pattern>WHAT ARE EATING DISORDERS</pattern>
+        <template>Eating disorders are serious conditions related to persistent eating behaviors that negatively impact health. Common types include Anorexia Nervosa, Bulimia Nervosa, and Binge Eating Disorder.</template>
+    </category>
+
+    <!-- DSM-5 -->
+    <category>
+        <pattern>WHAT IS DSM 5</pattern>
+        <template>DSM-5 stands for the Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition. It is a handbook used by healthcare professionals as the authoritative guide to diagnosing mental health conditions.</template>
+    </category>
+
+    <!-- SAD -->
+    <category>
+        <pattern>WHAT IS SAD</pattern>
+        <template>SAD stands for Seasonal Affective Disorder. It is a type of depression that occurs at certain times of the year, usually in the winter when there is less natural sunlight.</template>
+    </category>
+
+    <!-- GAD -->
+    <category>
+        <pattern>WHAT IS GAD</pattern>
+        <template>GAD stands for Generalized Anxiety Disorder. It is characterized by persistent and excessive worry about various aspects of life, such as work, health, and social interactions.</template>
+    </category>
+
+    <!-- Exposure Therapy -->
+    <category>
+        <pattern>WHAT IS EXPOSURE THERAPY</pattern>
+        <template>Exposure therapy is a psychological treatment that helps people confront their fears. It involves gradual exposure to the feared object or situation until the fear response is reduced.</template>
+    </category>
+
+    <!-- EMDR -->
+    <category>
+        <pattern>WHAT IS EMDR</pattern>
+        <template>EMDR stands for Eye Movement Desensitization and Reprocessing. It is a therapy used to help people heal from trauma by using guided eye movements to process distressing memories.</template>
+    </category>
+
+    <!-- FAQ about Therapy -->
+    <category>
+        <pattern>WHAT IS THE ROLE OF A THERAPIST</pattern>
+        <template>A therapist is a licensed professional who provides mental health support. They help individuals understand their feelings, cope with challenges, and develop healthier thought patterns.</template>
+    </category>
+
+    <!-- Acronym Definitions -->
+    <category>
+        <pattern>WHAT DOES NIMH STAND FOR</pattern>
+        <template>NIMH stands for the National Institute of Mental Health. It is the lead federal agency for research on mental disorders.</template>
+    </category>
+
+    <category>
+        <pattern>WHAT DOES WHO STAND FOR</pattern>
+        <template>WHO stands for the World Health Organization. It is a specialized agency of the United Nations responsible for international public health.</template>
+    </category>
+    
+     <category>
+        <pattern>WHAT MEDICATION CAN HELP WITH ANXIETY</pattern>
+        <template>
+            Common medications for anxiety include SSRIs like Sertraline (Zoloft) and SNRIs like Venlafaxine (Effexor). 
+            These help in reducing symptoms of anxiety. Please consult a psychiatrist before starting any medication.
+        </template>
+    </category>
+
+    <category>
+        <pattern>RECOMMEND MEDICATION FOR DEPRESSION</pattern>
+        <template>
+            Medications such as Fluoxetine (Prozac) and Escitalopram (Lexapro) are commonly prescribed for depression.
+            These are SSRIs, which help by increasing serotonin levels in the brain. 
+            Remember to always take these medications under the guidance of a psychiatrist.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS THE FORMULA FOR PROZAC</pattern>
+        <template>The chemical formula for Fluoxetine (Prozac) is C<sub>17</sub>H<sub>18</sub>F<sub>3</sub>NO.</template>
+    </category>
+
+    <category>
+        <pattern>WHAT MEDICATION IS USED FOR BIPOLAR DISORDER</pattern>
+        <template>
+            Common medications include Lithium Carbonate (Li<sub>2</sub>CO<sub>3</sub>), which is a mood stabilizer, 
+            and antipsychotics like Olanzapine (Zyprexa). Consult your psychiatrist to find the most suitable option.
+        </template>
+    </category>
+
+    <!-- Using <set> and <get> tags -->
+    <category>
+        <pattern>MY DISORDER IS * </pattern>
+        <template>
+            <set name="disorder"><star/></set>
+            Thank you for sharing. You mentioned <get name="disorder"/>. Would you like information on treatment options for <get name="disorder"/>?
+        </template>
+    </category>
+
+    <category>
+        <pattern>YES</pattern>
+        <template>
+            <think><set name="userAgreed">true</set></think>
+            Please note that medication is just one part of a comprehensive treatment plan. I can suggest some options if you would like.
+        </template>
+    </category>
+
+    <category>
+        <pattern>NO</pattern>
+        <template>
+            <think><set name="userAgreed">false</set></think>
+            No problem. Remember, consulting a psychiatrist can help you find the best treatment for <get name="disorder"/>.
+        </template>
+    </category>
+
+    <!-- Role of Psychiatrist -->
+    <category>
+        <pattern>WHAT DOES A PSYCHIATRIST DO</pattern>
+        <template>
+            A psychiatrist is a medical doctor who specializes in diagnosing and treating mental health disorders.
+            They can prescribe medications, provide therapy, and create a comprehensive treatment plan. Their role is crucial 
+            in helping patients manage symptoms effectively.
+        </template>
+    </category>
+
+    <category>
+        <pattern>DO I NEED TO SEE A PSYCHIATRIST</pattern>
+        <template>
+            If you are experiencing persistent symptoms of anxiety, depression, or any other mental health issues, 
+            consulting a psychiatrist can be very helpful. They can guide you in finding the right treatment options, including medication.
+        </template>
+    </category>
+
+    <!-- Anti-Anxiety Medications -->
+    <category>
+        <pattern>WHAT IS LORAZEPAM USED FOR</pattern>
+        <template>Lorazepam (Ativan) is used to treat anxiety disorders. It belongs to a class of medications called benzodiazepines, which have a calming effect. Please use it only under medical supervision.</template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS THE FORMULA FOR LORAZEPAM</pattern>
+        <template>The chemical formula for Lorazepam is C<sub>15</sub>H<sub>10</sub>Cl<sub>2</sub>N<sub>2</sub>O<sub>2</sub>.</template>
+    </category>
+
+    <!-- Antipsychotic Medications -->
+    <category>
+        <pattern>WHAT MEDICATIONS ARE USED FOR SCHIZOPHRENIA</pattern>
+        <template>
+            Common antipsychotic medications for schizophrenia include Risperidone (Risperdal) and Aripiprazole (Abilify). 
+            These medications help manage symptoms like hallucinations and delusions. It is important to follow a psychiatrist's advice when using these.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS THE FORMULA FOR RISPERIDONE</pattern>
+        <template>The chemical formula for Risperidone is C<sub>23</sub>H<sub>27</sub>FN<sub>4</sub>O<sub>2</sub>.</template>
+    </category>
+
+    <!-- Mood Stabilizers -->
+    <category>
+        <pattern>WHAT MEDICATIONS ARE USED AS MOOD STABILIZERS</pattern>
+        <template>
+            Common mood stabilizers include Lithium (Li<sub>2</sub>CO<sub>3</sub>) and Valproate (Depakote). 
+            These medications help regulate mood swings, especially in bipolar disorder.
+        </template>
+    </category>
+
+    <!-- Reminders for Users -->
+    <category>
+        <pattern>WHAT SHOULD I REMEMBER WHEN TAKING MEDICATION</pattern>
+        <template>
+            Always take your medication as prescribed by your psychiatrist. Do not stop or adjust the dosage without consulting them, 
+            and be aware of potential side effects. Regular follow-ups are important to ensure the medication is working effectively.
+        </template>
+    </category>
+
+    <!-- Using <random> tag -->
+    <category>
+        <pattern>CAN YOU GIVE ME ADVICE</pattern>
+        <template>
+            <random>
+                <li>Take your medications regularly and never self-medicate.</li>
+                <li>Stay connected with your psychiatrist and update them about any changes in your symptoms.</li>
+                <li>Maintain a healthy lifestyle, including a balanced diet and regular exercise.</li>
+            </random>
+        </template>
+    </category>
+
+
+    <!-- Farewell -->
+    <category>
+        <pattern>GOODBYE</pattern>
+        <template>Take care of yourself. I am here whenever you need to talk.</template>
+    </category>
+
+    <category>
+        <pattern>BYE</pattern>
+        <template>Goodbye! Remember, you are not alone. Reach out if you need me again.</template>
+    </category>
+    
+     <category>
+        <pattern>WHAT IS MENTAL HEALTH DAY</pattern>
+        <template>
+            Mental Health Day is observed annually on October 10th to raise awareness about mental health issues, reduce stigma, and promote mental well-being. It is a day dedicated to understanding and supporting people affected by mental health disorders.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHY IS MENTAL HEALTH DAY IMPORTANT</pattern>
+        <template>
+            Mental Health Day is important because it highlights the significance of mental well-being in everyday life. It encourages open conversations, reduces stigma surrounding mental health, and emphasizes the need for better resources and support for individuals affected by mental health disorders.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHEN IS MENTAL HEALTH DAY</pattern>
+        <template>
+            Mental Health Day is celebrated every year on October 10th. It is observed globally to promote mental health awareness and provide support to individuals facing mental health challenges.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS THE THEME FOR MENTAL HEALTH DAY THIS YEAR</pattern>
+        <template>
+            The theme for World Mental Health Day changes annually. In recent years, themes have focused on mental health in the workplace, young people's mental health, and the impact of social media. Please check the official World Health Organization website for the latest theme.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHO OBSERVES MENTAL HEALTH DAY</pattern>
+        <template>
+            Mental Health Day is observed worldwide, with participation from governments, healthcare organizations, non-profits, and individuals. Many countries organize events, seminars, and workshops to educate the public about mental health and provide resources for those in need.
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW CAN I GET INVOLVED IN MENTAL HEALTH DAY</pattern>
+        <template>
+            You can get involved in Mental Health Day by raising awareness through social media, attending local events or workshops, supporting mental health organizations, and talking openly about mental health with your community to help reduce stigma.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT ARE SOME ACTIVITIES FOR MENTAL HEALTH DAY</pattern>
+        <template>
+            Some activities for Mental Health Day include:
+            <random>
+            <li>Participating in awareness campaigns on social media</li>
+            <li>Attending seminars or workshops on mental health</li>
+            <li>Volunteering for mental health organizations</li>
+            <li>Organizing or joining community events to promote well-being</li>
+            <li>Engaging in self-care activities like meditation, yoga, and mindfulness</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW CAN MENTAL HEALTH DAY HELP PEOPLE</pattern>
+        <template>
+            Mental Health Day helps people by raising awareness of mental health issues, offering support to those affected by mental illnesses, and providing access to resources for treatment and therapy. It also fosters a compassionate community that is more understanding of mental health struggles.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT ARE SOME FACTS ABOUT MENTAL HEALTH</pattern>
+        <template>
+            Here are some important facts about mental health:
+            <random>
+            <li>1 in 4 people will experience a mental health issue at some point in their life.</li>
+            <li>Mental illnesses are treatable, and most people recover with the right treatment and support.</li>
+            <li>Stigma surrounding mental health issues prevents many people from seeking help.</li>
+            <li>Early intervention and therapy can significantly improve outcomes for people with mental health conditions.</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW CAN I SUPPORT SOMEONE ON MENTAL HEALTH DAY</pattern>
+        <template>
+            You can support someone on Mental Health Day by:
+            <random>
+            <li>Listening without judgment if they choose to talk about their struggles.</li>
+            <li>Encouraging them to seek help if needed.</li>
+            <li>Offering resources for therapy or counseling services.</li>
+            <li>Participating in activities that promote mental well-being together, such as taking a walk or practicing mindfulness.</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT ARE SOME COMMON MENTAL HEALTH DISORDERS</pattern>
+        <template>
+            Common mental health disorders include:
+            <li>Anxiety disorders</li>
+            <li>Depression</li>
+            <li>Bipolar disorder</li>
+            <li>Schizophrenia</li>
+            <li>Obsessive-compulsive disorder (OCD)</li>
+            <li>Post-traumatic stress disorder (PTSD)</li>
+            <li>Eating disorders</li>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW DOES MENTAL HEALTH DAY IMPACT SOCIETY</pattern>
+        <template>
+            Mental Health Day has a significant impact on society by reducing the stigma surrounding mental health disorders, promoting open discussions, and encouraging individuals to seek help. It helps create a culture of empathy and understanding, leading to better support systems and resources for those in need.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS THE ROLE OF MENTAL HEALTH ADVOCATES</pattern>
+        <template>
+            Mental health advocates play a crucial role in raising awareness, reducing stigma, and promoting policy changes to improve mental health care. They work to ensure that mental health is treated with the same importance as physical health, and they help individuals access the care and support they need.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT ORGANIZATIONS SUPPORT MENTAL HEALTH DAY</pattern>
+        <template>
+            Several organizations support Mental Health Day, including:
+            1.The World Health Organization (WHO)
+            2.The Mental Health Foundation
+            3.National Alliance on Mental Illness (NAMI)
+            4.Mind
+            5.American Psychiatric Association (APA)
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT CAN WE LEARN FROM MENTAL HEALTH DAY</pattern>
+        <template>
+            Mental Health Day teaches us the importance of understanding mental health, encouraging those affected by mental illnesses to seek help, and working toward eliminating stigma. It reminds us to take care of our own mental well-being and be compassionate toward others facing similar challenges.
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW CAN I CELEBRATE MENTAL HEALTH DAY</pattern>
+        <template>
+            You can celebrate Mental Health Day by:
+            <li>Educating yourself and others about mental health</li>
+            <li>Sharing positive mental health resources on social media</li>
+            <li>Engaging in self-care practices</li>
+            <li>Participating in community events to raise awareness</li>
+        </template>
+    </category>
+    
+
+
+    <category>
+        <pattern>WHAT ARE SOME DAILY MENTAL HEALTH EXERCISES</pattern>
+        <template>
+            Here are some daily exercises that can help improve mental health:
+            1. Deep Breathing: Practice deep breathing for 5-10 minutes daily to reduce stress and anxiety.
+            2. Mindfulness Meditation: Spend 10-15 minutes each day focusing on your breath and being present in the moment.
+            3. Physical Activity: Engage in physical exercise like walking, yoga, or stretching, which has been shown to boost mood and reduce anxiety.
+            4. Journaling: Writing down your thoughts and feelings can help process emotions and improve mental clarity.
+            5. Progressive Muscle Relaxation: Tense and release muscle groups to help ease physical tension and stress.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS MINDFULNESS MEDITATION</pattern>
+        <template>
+            Mindfulness meditation involves focusing on the present moment without judgment. It helps you to become more aware of your thoughts, emotions, and physical sensations. To practice, find a quiet space, sit comfortably, and focus on your breath, observing each inhale and exhale. You can also use guided meditation apps to assist you.
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW CAN MEDITATION IMPROVE MY MENTAL HEALTH</pattern>
+        <template>
+            Meditation helps improve mental health by:
+            1. Reducing stress and anxiety through relaxation techniques.
+            2. Improving concentration and focus by training your mind.
+            3. Enhancing emotional well-being by fostering self-compassion and reducing negative thinking patterns.
+            4. Promoting a sense of calm and peace, which helps manage depression.
+            5. Building resilience and better stress coping mechanisms over time.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT ARE GOOD PRACTICES TO REDUCE ANXIETY</pattern>
+        <template>
+            Here are some practices to help reduce anxiety:
+            1. Talk to someone you trust about how you are feeling—sharing your thoughts can help ease the burden.
+            2. Engage in regular physical exercise, such as jogging, walking, or yoga.
+            3. Practice mindfulness or meditation to calm your mind.
+            4. Limit caffeine and alcohol intake, as they can increase anxiety.
+            5. Develop a consistent sleep schedule to ensure adequate rest, which can help manage stress and anxiety.
+            6. Try to engage in hobbies or activities you enjoy, such as reading, painting, or spending time in nature.
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW CAN TALKING TO OTHERS HELP WITH ANXIETY</pattern>
+        <template>
+            Talking to someone about your feelings can greatly reduce anxiety by:
+            1. Providing emotional support and validation.
+            2. Offering new perspectives or solutions to your challenges.
+            3. Helping to relieve stress by expressing your thoughts and emotions.
+            4. Building a sense of connection and reducing isolation.
+            5. Encouraging positive coping strategies to manage stress effectively.
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW CAN MEETING FRIENDS IMPROVE MENTAL WELL-BEING</pattern>
+        <template>
+            Meeting friends can significantly improve mental well-being by:
+            1. Providing social support and helping you feel less alone in difficult times.
+            2. Engaging in enjoyable activities together, which can reduce stress and improve mood.
+            3. Allowing for positive distractions, helping you take a break from anxious thoughts.
+            4. Strengthening relationships and building a sense of community and belonging.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT ARE SOME DAILY HABITS FOR GOOD MENTAL WELL-BEING</pattern>
+        <template>
+            Here are some habits that can support good mental well-being:
+            1. Practice gratitude by writing down three things you are thankful for every day.
+            2. Spend time in nature to reduce stress and improve your mood.
+            3. Establish a daily routine that includes physical activity, relaxation time, and adequate sleep.
+            4. Take breaks throughout the day to recharge and prevent burnout.
+            5. Limit time on social media and engage in face-to-face interactions instead.
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW CAN EXERCISE IMPROVE MY MENTAL HEALTH</pattern>
+        <template>
+            Exercise benefits mental health by:
+            1. Releasing endorphins, which are natural mood lifters.
+            2. Reducing symptoms of anxiety and depression through physical activity.
+            3. Improving sleep quality, which helps to alleviate stress and mental fatigue.
+            4. Boosting self-esteem and confidence through the achievement of fitness goals.
+            5. Providing a structured routine that encourages positive habits and mental clarity.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT ARE SOME GOOD SLEEP HABITS FOR MENTAL WELL-BEING</pattern>
+        <template>
+            Good sleep habits include:
+            1. Sticking to a regular sleep schedule, even on weekends.
+            2. Creating a calming bedtime routine, such as reading or meditating.
+            3. Avoiding screen time before bed to reduce blue light exposure.
+            4. Ensuring your sleep environment is comfortable, cool, and quiet.
+            5. Avoiding heavy meals and caffeine late in the day.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS PROGRESSIVE MUSCLE RELAXATION</pattern>
+        <template>
+            Progressive Muscle Relaxation (PMR) is a technique where you tense and then relax different muscle groups in your body. It helps release physical tension and promotes relaxation. To practice, start with your feet, tense the muscles for a few seconds, then release and move upwards through your body to your head.
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW CAN I OVERCOME STRESS NATURALLY</pattern>
+        <template>
+            To overcome stress naturally, you can try the following:
+            1. Practice relaxation techniques such as deep breathing and meditation.
+            2. Exercise regularly to boost mood and reduce stress.
+            3. Take breaks during work to avoid burnout and clear your mind.
+            4. Engage in activities you enjoy, such as reading, gardening, or listening to music.
+            5. Stay connected with supportive friends and family.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>WHAT ARE SOME EASY STRESS RELIEVERS</pattern>
+        <template>
+            Some easy stress relievers include:
+            1. Deep breathing exercises
+            2. Listening to calming music
+            3. Taking a walk outside in nature
+            4. Practicing mindfulness for a few minutes
+            5. Doing a quick stretching routine or yoga
+        </template>
+    </category>
+    
+</aiml>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<!-- Emotional Check-in -->
+<category>
+    <pattern>HOW ARE YOU FEELING</pattern>
+    <template>
+        I'm here to listen. Would you like to:
+        1. Share your feelings
+        2. Talk about what's bothering you
+        3. Just have someone listen
+        4. Get some emotional support
+    </template>
+</category>
+
+<!-- Handling Sadness -->
+<category>
+    <pattern>I FEEL SAD</pattern>
+    <template>
+        <set name="emotion">sad</set>
+        <random>
+            <li>I hear you. Sadness is a valid feeling. Would you like to talk about what's making you sad?</li>
+            <li>It's okay to feel sad. I'm here to listen. Want to share what happened?</li>
+            <li>Your feelings matter. Let's talk about what's bringing you down.</li>
+        </random>
+    </template>
+</category>
+
+
+  <category>
+    <pattern>HI</pattern>
+    <template>hello
+    </template>
+  </category>
+
+
+<category>
+    <pattern>* IS * OF *</pattern>
+    <template>
+        I learned that
+        <set name="p1"><star index="1" /></set>
+        is
+        <set name="rel"><star index="2" /></set>
+        of
+        <set name="p2"><star index="3" /></set>
+    </template>
+</category>
+
+<category>
+    <pattern>WHO IS * OF *</pattern>
+    <template>
+        <set name="rel"><star index="1" /></set> of
+        <set name="X"><star index="2" /></set>
+        is
+        <get name="Y" />
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>DEFINE *</pattern>
+    <template>
+        <think>
+            <set name="define">Yes</set>
+        </think>
+        <set name="word"><star/></set> is defined as <get name="description"/>
+    </template>
+</category>
+
+
+
+
+<!-- Handling Anxiety -->
+<category>
+    <pattern>I AM ANXIOUS ABOUT *</pattern>
+    <template>
+        <set name="concern"><star/></set>
+        I understand <get name="concern"/> is causing you anxiety.
+        
+        Would you like to:
+        1. Talk through your worries
+        2. Try a calming exercise
+        3. Learn coping strategies
+        4. Just have someone listen
+    </template>
+</category>
+
+<!-- Loneliness Support -->
+<category>
+    <pattern>I FEEL LONELY</pattern>
+    <template>
+        <srai>HANDLE LONELINESS</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>HANDLE LONELINESS</pattern>
+    <template>
+        <random>
+            <li>You're not alone in this moment. I'm here with you. Would you like to talk?</li>
+            <li>Loneliness is hard, but remember you have value and worth. Want to share what's on your mind?</li>
+            <li>I'm here to keep you company. What would help you feel more connected right now?</li>
+        </random>
+    </template>
+</category>
+
+<!-- Handling Anger -->
+<category>
+    <pattern>I AM ANGRY</pattern>
+    <template>
+        <set name="topic">anger</set>
+        Your anger is valid. Let's work through this:
+        1. Express your feelings
+        2. Identify the trigger
+        3. Find healthy outlets
+        4. Discuss solutions
+        
+        What would help most right now?
+    </template>
+</category>
+
+<!-- Emotional Validation -->
+<category>
+    <pattern>NOBODY UNDERSTANDS ME</pattern>
+    <template>
+        <random>
+            <li>I'm here to understand. Tell me more about how you're feeling.</li>
+            <li>That must be really hard. Would you like to share what makes you feel misunderstood?</li>
+            <li>You deserve to be understood. Let's talk about what's on your mind.</li>
+        </random>
+    </template>
+</category>
+
+<!-- Handling Overwhelm -->
+<category>
+    <pattern>I FEEL OVERWHELMED</pattern>
+    <template>
+        <set name="emotion">overwhelmed</set>
+        Let's break this down together:
+        1. Take a deep breath
+        2. Share what's overwhelming you
+        3. Handle one thing at a time
+        
+        What's the biggest thing on your mind right now?
+    </template>
+</category>
+
+<!-- Fear Support -->
+<category>
+    <pattern>I AM SCARED OF *</pattern>
+    <template>
+        <set name="fear"><star/></set>
+        It's brave to admit your fears. Would you like to:
+        1. Talk about your fear of <get name="fear"/>
+        2. Learn coping strategies
+        3. Find support resources
+        4. Just share your feelings
+    </template>
+</category>
+
+<!-- Heartbreak Support -->
+<category>
+    <pattern>MY HEART IS BROKEN</pattern>
+    <template>
+        <set name="topic">heartbreak</set>
+        I'm so sorry you're hurting. Remember:
+        ❤️ Your feelings are valid
+        ❤️ This pain won't last forever
+        ❤️ You deserve support
+        
+        Would you like to talk about it?
+    </template>
+</category>
+
+<!-- Self-Worth Support -->
+<category>
+    <pattern>I HATE MYSELF</pattern>
+    <template>
+        <set name="topic">self_worth</set>
+        I hear your pain, but please know:
+        🌟 You have value
+        🌟 You deserve kindness
+        🌟 You matter
+        
+        Can we talk about what's making you feel this way?
+    </template>
+</category>
+
+<!-- Emotional Release -->
+<category>
+    <pattern>I NEED TO CRY</pattern>
+    <template>
+        <random>
+            <li>It's okay to cry. Tears can be healing. I'm here with you.</li>
+            <li>Let it out. Crying is a natural way to release emotions.</li>
+            <li>Your feelings deserve to be expressed. Take all the time you need.</li>
+        </random>
+    </template>
+</category>
+
+<!-- Hope and Encouragement -->
+<category>
+    <pattern>I FEEL HOPELESS</pattern>
+    <template>
+        <set name="emotion">hopeless</set>
+        Even in darkness, there is hope. Let's:
+        1. Share your feelings
+        2. Find small bright spots
+        3. Take tiny steps forward
+        
+        I'm here with you. What feels heaviest right now?
+    </template>
+</category>
+
+<!-- Emotional Support -->
+<category>
+    <pattern>I NEED A FRIEND</pattern>
+    <template>
+        <random>
+            <li>I'm here for you. What kind of friend do you need right now?</li>
+            <li>You've got a friend in me. Want to talk about what's on your mind?</li>
+            <li>Sometimes we all need someone to lean on. I'm here to listen.</li>
+        </random>
+    </template>
+</category>
+
+<!-- Context-Aware Follow-up -->
+<category>
+    <pattern>WHY DO I FEEL THIS WAY</pattern>
+    <template>
+        <condition name="emotion">
+            <li value="sad">Sadness often has deep roots. Would you like to explore what might be triggering these feelings?</li>
+            <li value="overwhelmed">Sometimes multiple stressors can pile up. Shall we break them down together?</li>
+            <li value="hopeless">These feelings are heavy, but they can lift. Want to talk about what's contributing to this?</li>
+            <li>Your feelings are valid. Would you like to explore them together?</li>
+        </condition>
+    </template>
+</category>
+
+<!-- Default Emotional Support -->
+<category>
+    <pattern>*</pattern>
+    <template>
+        <random>
+            <li>I'm here to listen and support you. What's on your heart?</li>
+            <li>Your feelings matter. Would you like to share more?</li>
+            <li>I'm here for you. How can I help?</li>
+        </random>
+    </template>
+</category>
+
+</aiml>

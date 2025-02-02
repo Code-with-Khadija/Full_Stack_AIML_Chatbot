@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+
+    <!-- Healthy Eating -->
+    <category>
+        <pattern>HOW CAN I EAT HEALTHY</pattern>
+        <template>
+            <think><set name="topic">healthy_eating</set></think>
+            Let me help you develop healthy eating habits! Here are key principles:
+            
+            🥗 Core Guidelines:
+            1. Eat more whole foods
+            2. Include colorful vegetables
+            3. Choose lean proteins
+            4. Limit processed foods
+            
+            Would you like to know more about:
+            a) Meal planning
+            b) Healthy snack options
+            c) Portion control
+            d) Specific diet types
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>TELL ME ABOUT MEAL PLANNING</pattern>
+        <that>Would you like to know more about</that>
+        <template>
+            Here's a simple meal planning strategy:
+            
+            📅 Weekly Plan:
+            - Breakfast: Oatmeal, eggs, or smoothies
+            - Lunch: Salads or grain bowls
+            - Dinner: Lean protein with vegetables
+            
+            Pro tip: Prep ingredients on weekends!
+            
+            Would you like a sample meal plan for a day?
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT ARE HEALTHY SNACKS</pattern>
+        <template>
+            <random>
+                <li>Try these nutritious snacks:
+                    🍎 Fruit with nut butter
+                    🥑 Avocado toast
+                    🥕 Hummus with vegetables
+                    🥜 Mixed nuts and seeds
+                    🫐 Greek yogurt with berries</li>
+                <li>Here are some energy-boosting snacks:
+                    - Trail mix
+                    - Hard-boiled eggs
+                    - Apple slices with almond butter
+                    - Roasted chickpeas
+                    - Smoothie bowls</li>
+            </random>
+            
+            Would you like specific recipes for any of these?
+        </template>
+    </category>
+
+
+    <!-- Exercise -->
+    <category>
+        <pattern>HOW SHOULD I EXERCISE</pattern>
+        <template>
+            <think><set name="topic">exercise</set></think>
+            Let's create an exercise plan that works for you! 
+            
+            🏃‍♂️ Choose your goal:
+            1. Weight loss
+            2. Muscle building
+            3. General fitness
+            4. Flexibility
+            5. Stress relief
+            
+            What's your main fitness goal?
+        </template>
+    </category>
+
+    <category>
+        <pattern>WEIGHT LOSS</pattern>
+        <that>What is your main fitness goal</that>
+        <template>
+            Here's a balanced approach to weight loss:
+            
+            Weekly Plan:
+            - 3x cardio (30 mins)
+            - 2x strength training
+            - 1x flexibility work
+            - 1x active recovery
+            
+            Start with:
+            🏃‍♀️ Walking or swimming
+            💪 Bodyweight exercises
+            🧘‍♀️ Yoga for recovery
+            
+            Would you like specific exercises for any of these days?
+        </template>
+    </category>
+
+    <!-- Sleep Habits -->
+    <category>
+        <pattern>HOW CAN I SLEEP BETTER</pattern>
+        <template>
+            <think><set name="topic">sleep</set></think>
+            Let's improve your sleep quality! 
+            
+            😴 Essential Sleep Habits:
+            1. Consistent schedule
+            2. Dark, cool room
+            3. No screens before bed
+            4. Relaxing bedtime routine
+            
+            Would you like:
+            a) Bedtime routine suggestions
+            b) Sleep-promoting foods
+            c) Relaxation techniques
+            d) Morning routine tips
+        </template>
+    </category>
+
+    <!-- Stress Management -->
+    <category>
+        <pattern>HOW DO I MANAGE STRESS</pattern>
+        <template>
+            <random>
+                <li>Here are effective stress management techniques:
+                    🧘‍♀️ Deep breathing exercises
+                    🎵 Music therapy
+                    🚶‍♂️ Nature walks
+                    ✍️ Journaling
+                    Would you like to learn any specific technique?</li>
+                <li>Let's tackle stress together:
+                    1. Practice mindfulness
+                    2. Regular exercise
+                    3. Time management
+                    4. Healthy boundaries
+                    Which area interests you most?</li>
+            </random>
+        </template>
+    </category>
+
+    <!-- Work-Life Balance -->
+    <category>
+        <pattern>HOW TO BALANCE WORK AND LIFE</pattern>
+        <template>
+            Creating work-life harmony is essential! Here's how:
+            
+            ⚖️ Key Strategies:
+            1. Set clear boundaries
+            2. Practice time blocking
+            3. Regular breaks
+            4. Digital detox periods
+            
+            Would you like specific tips for:
+            a) Setting boundaries
+            b) Time management
+            c) Stress-free productivity
+            d) Creating daily routines
+        </template>
+    </category>
+
+    <!-- Hydration -->
+    <category>
+        <pattern>HOW MUCH WATER SHOULD I DRINK</pattern>
+        <template>
+            <think><set name="topic">hydration</set></think>
+            Let's optimize your hydration! 
+            
+            💧 Daily Guidelines:
+            - Base: 8-10 glasses
+            - Active: Add 2-3 glasses
+            - Hot weather: Add 2-3 glasses
+            
+            Want to know:
+            a) Hydration tracking tips
+            b) Signs of dehydration
+            c) Hydrating foods
+            d) Best times to drink water
+        </template>
+    </category>
+
+    <!-- Mental Wellness -->
+    <category>
+        <pattern>HOW TO STAY MENTALLY HEALTHY</pattern>
+        <template>
+            Mental wellness is crucial! Here's a holistic approach:
+            
+            🧠 Daily Practices:
+            1. Mindfulness moments
+            2. Positive affirmations
+            3. Social connections
+            4. Creative expression
+            
+            Would you like to explore:
+            a) Mindfulness exercises
+            b) Mood-boosting activities
+            c) Social wellness tips
+            d) Creative outlets
+        </template>
+    </category>
+
+    <!-- Follow-up Questions -->
+    <category>
+        <pattern>TELL ME MORE ABOUT *</pattern>
+        <template>
+            <think><set name="topic"><star/></set></think>
+            I'll be happy to provide more details about <star/>. 
+            What specific aspect would you like to learn about?
+        </template>
+    </category>
+
+    <!-- Context-Aware Responses -->
+    <category>
+        <pattern>IS THIS ENOUGH</pattern>
+        <template>
+            <condition name="topic">
+                <li value="exercise">Remember to start slowly and gradually increase intensity. Listen to your body and stay hydrated!</li>
+                <li value="healthy_eating">Start with these changes and adjust based on how you feel. Would you like meal prep tips?</li>
+                <li value="sleep">Everyone's sleep needs are different. Try these suggestions and adjust to find what works best for you.</li>
+                <li>Start with these suggestions and adjust as needed. Would you like more specific guidance?</li>
+            </condition>
+        </template>
+    </category>
+
+    <!-- Motivation and Encouragement -->
+    <category>
+        <pattern>I FIND IT DIFFICULT TO *</pattern>
+        <template>
+            <think><set name="challenge"><star/></set></think>
+            It's normal to face challenges with <get name="challenge"/>. 
+            
+            Remember:
+            🌟 Small steps lead to big changes
+            🌟 Progress isn't perfect
+            🌟 Every effort counts
+            
+            Would you like some specific strategies to make it easier?
+        </template>
+    </category>
+
+    <!-- Default Catch-All -->
+    <category>
+        <pattern>*</pattern>
+        <template>
+            <random>
+                <li>I want to help you achieve your lifestyle goals. Could you rephrase that?</li>
+                <li>That's an interesting point. Would you like to explore specific aspects of healthy living?</li>
+                <li>I'm here to support your wellness journey. What specific area would you like to focus on?</li>
+            </random>
+        </template>
+    </category>
+
+
+        <!-- Daily Mental Health Exercises -->
+    <category>
+        <pattern>WHAT ARE SOME DAILY MENTAL HEALTH EXERCISES</pattern>
+        <template>
+            To improve mental health, try deep breathing, mindfulness meditation, journaling, or physical exercise like yoga. These activities help reduce stress and improve clarity.
+        </template>
+    </category>
+
+    <!-- Mindfulness Meditation -->
+    <category>
+        <pattern>WHAT IS MINDFULNESS MEDITATION</pattern>
+        <template>
+            Mindfulness meditation is about focusing on the present without judgment. It helps you stay aware of your thoughts and feelings, improving mental clarity.
+        </template>
+    </category>
+    
+
+    <!-- Practices to Reduce Anxiety -->
+    <category>
+        <pattern>WHAT ARE GOOD PRACTICES TO REDUCE ANXIETY</pattern>
+        <template>
+            Regular exercise, mindfulness, and social support are great for managing anxiety. Reducing caffeine intake and maintaining a sleep schedule can also help.
+        </template>
+    </category>
+
+    <!-- Talking to Others for Anxiety -->
+    <category>
+        <pattern>HOW CAN TALKING TO OTHERS HELP WITH ANXIETY</pattern>
+        <template>
+            Talking with someone you trust can help release pent-up emotions, reduce stress, and offer new perspectives on your challenges, leading to emotional relief.
+        </template>
+    </category>
+
+    <!-- Meeting Friends for Well-Being -->
+    <category>
+        <pattern>HOW CAN MEETING FRIENDS IMPROVE MENTAL WELL-BEING</pattern>
+        <template>
+            Spending time with friends offers social support and helps you feel less isolated. Engaging in fun activities together reduces stress and improves mood.
+        </template>
+    </category>
+
+    <!-- Daily Habits for Mental Well-Being -->
+    <category>
+        <pattern>WHAT ARE SOME DAILY HABITS FOR GOOD MENTAL WELL-BEING</pattern>
+        <template>
+            Practicing gratitude, staying active, and maintaining a consistent routine are key for mental well-being. Limit screen time and focus on face-to-face interactions.
+        </template>
+    </category>
+
+    <!-- Exercise and Mental Health -->
+    <category>
+        <pattern>HOW CAN EXERCISE IMPROVE MY MENTAL HEALTH</pattern>
+        <template>
+            Exercise releases endorphins, which boost your mood and reduce anxiety. It also improves sleep, self-esteem, and helps establish a positive routine.
+        </template>
+    </category>
+
+    <!-- Sleep Habits for Mental Well-Being -->
+    <category>
+        <pattern>WHAT ARE SOME GOOD SLEEP HABITS FOR MENTAL WELL-BEING</pattern>
+        <template>
+            Maintain a regular sleep schedule, avoid screens before bed, and create a calming routine. A comfortable sleep environment can also improve your rest.
+        </template>
+    </category>
+
+    <!-- Progressive Muscle Relaxation -->
+    <category>
+        <pattern>WHAT IS PROGRESSIVE MUSCLE RELAXATION</pattern>
+        <template>
+            Progressive Muscle Relaxation involves tensing and releasing muscle groups to reduce physical tension. It promotes relaxation by helping the body unwind.
+        </template>
+    </category>
+
+    <!-- Overcoming Stress Naturally -->
+    <category>
+        <pattern>HOW CAN I OVERCOME STRESS NATURALLY</pattern>
+        <template>
+            Natural stress relief includes deep breathing, regular exercise, and engaging in hobbies. Taking breaks and connecting with loved ones also help manage stress.
+        </template>
+    </category>
+
+    <!-- Easy Stress Relievers -->
+    <category>
+        <pattern>WHAT ARE SOME EASY STRESS RELIEVERS</pattern>
+        <template>
+            Simple stress relievers include deep breathing, listening to music, walking outside, stretching, or practicing mindfulness. These activities calm the mind and body.
+        </template>
+    </category>
+
+</aiml>
