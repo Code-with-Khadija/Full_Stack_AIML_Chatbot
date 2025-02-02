@@ -1,4 +1,4 @@
-# AIML Chatbot with Prolog and Neo4j
+# Full Stack AIML Chatbot with NLP, Prolog, Flask and Neo4j
 
 This project is a rule-based chatbot that leverages **AIML (Artificial Intelligence Markup Language)** for natural language processing, **Prolog** for logical reasoning, and **Neo4j** as a graph database for managing relationships and structured data. The chatbot is integrated with **Flask** to provide a user-friendly web interface.
 
